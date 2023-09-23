@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import CardForm from "./form-page/CardForm";
 
-export default function App() {
+function App() {
   return (
-    <div>App</div>
-  )
+    <>
+      <CardForm />
+    </>
+  );
 }
+
+export default App;

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Inter", "Roboto";
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  height: 60%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form {
+  height: 100%;
+}
+
+.card-form p {
+  color: red;
+}
+
+.card-form span {
+  color: red;
+}
+
+input {
+  padding-left: 10px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-form label {
+  color: #220930;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.input-field input {
+  border: solid 1px gray;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.expiry-cvc {
+  display: flex;
+}
+
+.expiry {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+.expiry-inputs {
+  width: 100%;
+}
+
+.expiry-inputs input {
+  width: 40%;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  margin-right: 5%;
+}
+
+.expiry-error {
+  width: 100%;
+}
+
+.expiry-error span {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.cvc {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+.cvc input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  margin-right: 5%;
+}
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  height: 3rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #220930;
+}
