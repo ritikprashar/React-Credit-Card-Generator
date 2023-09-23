@@ -22,6 +22,14 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
+.card-components {
+  width: 40%;
+  background-image: url("../Assets/background.png");
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
 .card-form {
   width: 60%;
   height: 100%;
@@ -132,4 +140,116 @@ button {
   border-radius: 0.5rem;
   color: white;
   background-color: #220930;
+}
+
+.cardface,
+.card-front,
+.card-back {
+  position: absolute;
+  z-index: 10;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  background-image: url("../Assets/cardfront.png");
+  background-size: cover;
+  width: 450px;
+  height: 250px;
+  border-radius: 0.8rem;
+  top: 10%;
+  left: 11%;
+  padding-bottom: 10px;
+}
+
+.card-front-div1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.68px;
+}
+
+.card-front-div2 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 0.8em;
+  gap: 5rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.47px;
+}
+
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../Assets/cardback.png");
+  background-size: cover;
+  width: 450px;
+  height: 250px;
+  border-radius: 0.8rem;
+  bottom: 6%;
+  left: 16%;
+}
+
+.card-back-div1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  background-color: black;
+  width: 99%;
+  height: 50px;
+}
+
+.card-back-div2 {
+  background-color: #adb6bf;
+  border-radius: 0.4rem;
+  margin-top: 2rem;
+  width: 75%;
+  height: 50px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.card-back-div2 > p {
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: #bbb9bc;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.875px;
+}
+
+.error {
+  color: #f81212;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.5rem;
 }

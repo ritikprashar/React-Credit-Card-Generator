@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CardFront from "../components/CardFront";
+import CardBack from "../components/CardBack";
 
 const CardForm = () => {
   const [cardholderName, setCardholderName] = useState("");
@@ -148,6 +150,9 @@ const CardForm = () => {
 
   return (
     <div className="container">
+      <div className="card-components"></div>
+      <CardFront cardDetails={cardDetails} className="cardface" />
+      <CardBack cardCvc={cardDetails.cvc} className="cardface" />
       <div className="card-form">
         <form onSubmit={submitHandler} className="form">
           <div className="input-field">
