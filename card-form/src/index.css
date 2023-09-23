@@ -152,7 +152,7 @@ button {
 .card-front {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 20px;
   background-image: url("../Assets/cardfront.png");
   background-size: cover;
@@ -225,7 +225,7 @@ button {
   font-weight: 700;
   letter-spacing: 2px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -234,7 +234,7 @@ button {
   font-size: 1rem;
 }
 
-::placeholder {
+input::placeholder {
   color: #bbb9bc;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
